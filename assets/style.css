@@ -284,36 +284,50 @@ section {
 
 .contact-info {
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .contact-info iframe {
-	width: 400px;
 	height: 400px;
 }
 
-.address-details {
-	display: flex;
-	text-align: left;
-	flex-direction: column;
-	justify-content: start;
-}
-
-.address-details h3 {
+.contact .contact-info h3 {
 	color: #fce138;
-	font-size: 32px;
-	margin-bottom: 8px;
 }
 
-.address-details p,
-.address-details address {
-	margin: 10px 0;
-	font-size: 17px;
-	line-height: 1.3;
-	color: white;
+.contact .contact-info p,
+address {
+	line-height: 1.5;
+	color: #fff;
 }
 
-.address-details address a {
+.contact a {
 	color: #fce138;
+}
+
+.contact-form input,
+.contact-form textarea {
+	border: 1px solid #024e76;
+	display: block;
+	padding: 10px;
+	width: 100%;
+	margin-bottom: 15px;
+	margin-top: 5px;
+	font-size: 16px;
+	color: #024e76;
+}
+
+.contact-form button {
+	width: 100%;
+	border: none;
+	background: #fce138;
+	color: #024e76;
+	text-align: center;
+	padding: 15px 0;
+	font-size: 16px;
+}
+
+.contact-form label {
+	color: #fff;
 }
